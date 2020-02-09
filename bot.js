@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "$";
+var prefix = "%";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -17,14 +17,14 @@ client.on("message", message => {
 
 
 client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : i1Suhaib`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`veit ..`,"Playing")
-client.user.setStatus("dnd")
+console.log(`Logged in as ${client.user.tag}!`);
+console.log("Streamstatus by DayZoonHD")
+
+client.user.setActivity(`Avatars.`, {
+type: "Playing",
+url: "https://www.twitch.tv/ninja"})
+    .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
+    .catch(console.error);
 });
 
 
