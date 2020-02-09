@@ -20,12 +20,11 @@ client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 console.log("Streamstatus by DayZoonHD")
 
-client.user.setActivity(`Avatars.`, {
+client.user.setActivity(`Avatar.`, {
 type: "Playing",
 url: "https://www.twitch.tv/ninja"})
     .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
-    .catch(console.error);
-});
+    .catch(console.error);});
 
 
 client.login(process.env.BOT_TOKEN);
