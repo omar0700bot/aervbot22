@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "%";
+var prefix = "l8";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -20,8 +20,8 @@ client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 console.log("Streamstatus by DayZoonHD")
 
-client.user.setActivity(`Avatar.`, {
-type: "Playing",
+client.user.setActivity(`Shion.`, {
+type: "watching",
 url: "https://www.twitch.tv/ninja"})
     .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
     .catch(console.error);});
